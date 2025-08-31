@@ -1,75 +1,49 @@
-Crop Recommendation System
+🌱 Crop Recommendation System Using Soil and Weather Data
 
-Project Overview
+📌 Project Overview
+The Crop Recommendation System leverages Machine Learning to recommend the most suitable crop for cultivation based on soil nutrients (N, P, K), pH, temperature, humidity, and rainfall. This system helps farmers make data-driven decisions, optimize resource usage, and promote sustainable agriculture.
 
-The Crop Recommendation System is a machine learning project designed to assist farmers in selecting the most suitable crop based on soil nutrients (N, P, K), soil pH, temperature, humidity, and rainfall. The system aims to maximize crop yield, optimize resource usage, and promote sustainable agricultural practices.
+✨ Features
+✔️ Predicts the best crop for given soil and weather conditions
+✔️ Built with Random Forest Classifier for high accuracy
+✔️ Lightweight and easy to use
+✔️ Can be extended to a web or mobile application
 
-Features
+📂 Dataset
+Source: Kaggle – Crop Recommendation Dataset
+| Feature     | Description                         |
+| ----------- | ----------------------------------- |
+| N           | Nitrogen content in soil (kg/ha)    |
+| P           | Phosphorous content in soil (kg/ha) |
+| K           | Potassium content in soil (kg/ha)   |
+| temperature | Average temperature (°C)            |
+| humidity    | Relative humidity (%)               |
+| ph          | Soil pH                             |
+| rainfall    | Rainfall (mm)                       |
+| crop        | Target crop label                   |
 
-Predicts the best crop to cultivate based on environmental and soil parameters.
+📊 Records: 2200+
+🎯 Goal: Recommend the most suitable crop.
 
-Uses machine learning classification algorithms for high accuracy.
+🛠️ Preprocessing Steps
+Handle missing values & remove duplicates.
+Encode categorical target (crop) using LabelEncoder.
+Feature scaling with StandardScaler (for KNN/SVM).
+Train-test split: 80/20.
 
-Supports decision-making for sustainable agriculture.
+🤖 Machine Learning Model
+Algorithm: Random Forest Classifier (best accuracy)
+Other Models Tested: Decision Tree, KNN, XGBoost
+Evaluation Metrics: Accuracy, Confusion Matrix, F1-score
 
-Can be extended to web or mobile applications for farmers.
+4️⃣ Input Parameters
+Provide soil and weather details → Get recommended crop 🌾
 
-Dataset
+🌍 Future Scope
+🔹 Deploy as a Web/Mobile App for farmers
+🔹 Integrate real-time weather APIs
+🔹 Add fertilizer recommendation module
+🔹 Extend to crop disease detection
 
-Source: Crop Recommendation Dataset - Kaggle
-
-Format: CSV
-
-Dataset Details:
-
-Feature	Description
-N	Nitrogen content in soil (kg/ha)
-P	Phosphorous content in soil (kg/ha)
-K	Potassium content in soil (kg/ha)
-temperature	Average temperature (°C)
-humidity	Average humidity (%)
-ph	Soil pH
-rainfall	Average rainfall (mm)
-crop	Target crop (categorical variable)
-
-Number of Records: 2200+
-
-Purpose: Train ML models to recommend suitable crops based on soil and weather conditions.
-
-Data Cleaning: Checked for missing or duplicate values. Filled missing numeric values with mean and dropped duplicates.
-
-Feature Selection: Selected features: N, P, K, temperature, humidity, ph, rainfall.
-
-Encoding Target Variable: Converted crop names to numeric labels using LabelEncoder.
-
-Feature Scaling (Optional): Used StandardScaler for models requiring scaling (e.g., KNN, SVM).
-
-Train-Test Split: Split data into training (80%) and testing (20%) sets.
-
-Machine Learning Model
-
-Algorithm Used: Random Forest Classifier (baseline). Alternatives: Decision Tree, KNN, XGBoost.
-
-Evaluation Metrics:
-
-Accuracy
-
-Confusion Matrix
-
-Classification Report
-
-Workflow:
-
-Load and preprocess dataset.
-
-Split dataset into training and testing sets.
-
-Train ML model on training data.
-
-Predict crop on testing data.
-
-Evaluate model performance.
-
-Author
-
-Prachi Urgunde | Crop Recommandation System | Sustainable Agriculture
+👩‍💻 Author
+Prachi Urgunde | Crop Recommandation System | Sustainable Agriculture 
